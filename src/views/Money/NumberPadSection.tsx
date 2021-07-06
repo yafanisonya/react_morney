@@ -99,7 +99,7 @@ const NumberPadSection: React.FC = ()=>{
       case '清空':
         setOutput('');
         break;
-      case 'OK':
+      case 'OK':  
         console.log('ok');
         break;
       case '.':
