@@ -35,11 +35,16 @@ const NoteSection: React.FC = ()=>{
       <label>
         <span>备注</span>
         <input type="text" 
-               placeholder="在这里添加备注" 
-               ref={refInput} 
-               defaultValue={note}
-               onBlur={onBlur}
-               />
+          placeholder="在这里添加备注" 
+          ref={refInput} 
+          defaultValue={note}
+          onBlur={onBlur}
+        />
+        {/* <input type="text" 
+          placeholder="在这里添加备注" 
+          value={note}
+          onChange={(e)=>setNote(e.target.value)}
+        /> */}
       </label>
     </Wrapper>
   )
