@@ -27,7 +27,8 @@ const Wrapper = styled.section`
 
 const CategorySection: React.FC = ()=>{
 	const categoryMap = {'-':'支出','+':'收入'};
-	const [categoryList] = useState<('+' | '-')[]>(['-','+']);
+	type Y = keyof typeof categoryMap;
+	const [categoryList] = useState<Y[]>(['-','+']);
 	const [category,setCategory] = useState('-');
 	return(
 		<Wrapper>
