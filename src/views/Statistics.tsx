@@ -1,5 +1,5 @@
 import Layout from '../components/Layout';
-import React,{useState, ReactNode} from 'react';
+import React,{useState} from 'react';
 import {CategorySection} from './Money/CategorySection';
 import styled from 'styled-components';
 import {useRecords, RecordItem} from '../hooks/useRecords';
@@ -38,7 +38,7 @@ function Statistics() {
 	const hash : {[K:string]: RecordItem[]} = {};
 	const selectedRecords = records.filter(r=> r.category === category);
 
-	selectedRecords.map(r=>{
+	selectedRecords.forEach(r=>{
 		const key = day(r.createdAt).format('YYYY-MM-DD');
 		if(!(key in hash)){
 			hash[key] = [];
