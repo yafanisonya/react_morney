@@ -2,7 +2,8 @@ import styled from 'styled-components';
 import React,{useState} from 'react';
 
 const Wrapper = styled.section`
-	font-size:24px;
+	font-size:20px;
+	font-weight:700;
 	> ul{
 		display:flex;
 		> li{

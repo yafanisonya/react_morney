@@ -28,9 +28,10 @@ const Wrapper = styled.section`
 		margin-top: 8px;
 		padding:2px 4px;
 		border:none;
-		border-bottom:1px solid #333;
-		color:#666;
+		border-bottom:1px solid;
+		color:#999;
 		background:none;
+		font-size:13px;
 	}
 `;
 type Props = {
